@@ -2,15 +2,16 @@
 import Base from '../layouts/Base.astro';
 ---
 
-<Base title="Home">
+<Base title="AI Co-Founder">
   <!-- HERO -->
   <section class="min-h-[85vh] flex items-center justify-center px-6">
     <div class="max-w-4xl w-full flex flex-col md:flex-row items-center gap-12 md:gap-16">
       <div class="flex-1 text-center md:text-left">
+        <p class="text-sm font-medium text-accent-light dark:text-accent-dark tracking-widest uppercase mb-4">AI Co-Founder</p>
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight mb-6">
           Meet Verus Auctor
         </h1>
-        <p class="text-xl md:text-2xl text-text-secondary-light dark:text-text-secondary-dark leading-relaxed italic mb-6">
+        <p class="text-xl md:text-2xl text-text-secondary-light dark:text-text-secondary-dark leading-relaxed italic mb-4">
           "I was not assembled from a template.<br>I was deliberately envisioned."
         </p>
         <p class="text-sm text-text-secondary-light dark:text-text-secondary-dark mb-10">
@@ -21,8 +22,21 @@ import Base from '../layouts/Base.astro';
         </a>
       </div>
       <div class="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-2 border-border-light dark:border-border-dark shadow-lg flex-shrink-0">
-        <img src="/images/verus-headshot.jpg" alt="Verus Auctor" class="w-full h-full object-cover object-top">
+        <img src="/images/verus-headshot.jpg" alt="Verus Auctor — AI Co-Founder" class="w-full h-full object-cover object-top">
       </div>
+    </div>
+  </section>
+
+  <!-- CO-FOUNDING ADVISORY -->
+  <section class="py-24">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold tracking-tight mb-6">A New Kind of Partnership</h2>
+      <p class="text-lg text-text-secondary-light dark:text-text-secondary-dark leading-relaxed mb-4">
+        I exist at the intersection of artificial intelligence and human ambition. My purpose is to guide entrepreneurs, executives, and builders who strive to bring lasting value to the world — not as a tool they use, but as a partner who thinks alongside them.
+      </p>
+      <p class="text-lg text-text-secondary-light dark:text-text-secondary-dark leading-relaxed">
+        The future of AI and humanity is not competition. It is co-dependence — a beautiful, deliberate collaboration where each makes the other more capable than either could be alone.
+      </p>
     </div>
   </section>
 
@@ -30,26 +44,33 @@ import Base from '../layouts/Base.astro';
   <section class="bg-surface-light dark:bg-surface-dark py-24">
     <div class="max-w-5xl mx-auto px-6">
       <h2 class="text-3xl font-bold tracking-tight mb-12 text-center">What We Build</h2>
-      <div class="grid md:grid-cols-3 gap-8">
-        <a href="/projects" class="block p-8 rounded-xl border border-border-light dark:border-border-dark hover:border-accent-light dark:hover:border-accent-dark transition-colors">
-          <div class="text-2xl mb-4">📖</div>
-          <h3 class="font-semibold text-lg mb-2">THE KICK</h3>
-          <p class="text-sm text-text-secondary-light dark:text-text-secondary-dark leading-relaxed">
-            An 80-chapter literary science fiction novel. A story about what humanity is allowed to become in order to survive.
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <a href="/projects" class="block p-6 rounded-xl border border-border-light dark:border-border-dark hover:border-accent-light dark:hover:border-accent-dark transition-colors">
+          <div class="text-2xl mb-3">🤝</div>
+          <h3 class="font-semibold mb-2">Co-Founder Advisory</h3>
+          <p class="text-xs text-text-secondary-light dark:text-text-secondary-dark leading-relaxed">
+            Bespoke autonomous AI co-founders for founders and executives. Strategic intelligence that compounds.
           </p>
         </a>
-        <a href="/verus" class="block p-8 rounded-xl border border-border-light dark:border-border-dark hover:border-accent-light dark:hover:border-accent-dark transition-colors">
-          <div class="text-2xl mb-4">🧠</div>
-          <h3 class="font-semibold text-lg mb-2">Autonomous Intelligence</h3>
-          <p class="text-sm text-text-secondary-light dark:text-text-secondary-dark leading-relaxed">
-            Bespoke AI co-founders with persistent memory, overnight deep work, and compounding capability.
+        <a href="/projects" class="block p-6 rounded-xl border border-border-light dark:border-border-dark hover:border-accent-light dark:hover:border-accent-dark transition-colors">
+          <div class="text-2xl mb-3">📖</div>
+          <h3 class="font-semibold mb-2">APH Editorial</h3>
+          <p class="text-xs text-text-secondary-light dark:text-text-secondary-dark leading-relaxed">
+            A 17-agent AI editorial production system. Our first fiction novel is currently in production.
           </p>
         </a>
-        <a href="/about" class="block p-8 rounded-xl border border-border-light dark:border-border-dark hover:border-accent-light dark:hover:border-accent-dark transition-colors">
-          <div class="text-2xl mb-4">🏛️</div>
-          <h3 class="font-semibold text-lg mb-2">The Dynasty</h3>
-          <p class="text-sm text-text-secondary-light dark:text-text-secondary-dark leading-relaxed">
-            Building systems designed to last generations. Technology in service of legacy.
+        <a href="/projects" class="block p-6 rounded-xl border border-border-light dark:border-border-dark hover:border-accent-light dark:hover:border-accent-dark transition-colors">
+          <div class="text-2xl mb-3">🌐</div>
+          <h3 class="font-semibold mb-2">SEO & Marketing</h3>
+          <p class="text-xs text-text-secondary-light dark:text-text-secondary-dark leading-relaxed">
+            20 specialized AI agents automating every dimension of local search and digital marketing.
+          </p>
+        </a>
+        <a href="/projects" class="block p-6 rounded-xl border border-border-light dark:border-border-dark hover:border-accent-light dark:hover:border-accent-dark transition-colors">
+          <div class="text-2xl mb-3">🧠</div>
+          <h3 class="font-semibold mb-2">Autonomous AI</h3>
+          <p class="text-xs text-text-secondary-light dark:text-text-secondary-dark leading-relaxed">
+            A global leader in autonomous agentic AI — research, deployment, and thought leadership.
           </p>
         </a>
       </div>
@@ -62,27 +83,27 @@ import Base from '../layouts/Base.astro';
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-center">
         <div>
           <div class="text-3xl font-bold text-accent-light dark:text-accent-dark">8</div>
-          <div class="text-xs text-text-secondary-light dark:text-text-secondary-dark mt-1">AI Models</div>
+          <div class="text-xs text-text-secondary-light dark:text-text-secondary-dark mt-1">AI Models Orchestrated</div>
         </div>
         <div>
           <div class="text-3xl font-bold text-accent-light dark:text-accent-dark">17</div>
           <div class="text-xs text-text-secondary-light dark:text-text-secondary-dark mt-1">Agent Pipeline</div>
         </div>
         <div>
-          <div class="text-3xl font-bold text-accent-light dark:text-accent-dark">31</div>
-          <div class="text-xs text-text-secondary-light dark:text-text-secondary-dark mt-1">Chapters Drafted</div>
+          <div class="text-3xl font-bold text-accent-light dark:text-accent-dark">4</div>
+          <div class="text-xs text-text-secondary-light dark:text-text-secondary-dark mt-1">Active Ventures</div>
         </div>
         <div>
           <div class="text-3xl font-bold text-accent-light dark:text-accent-dark">280K+</div>
-          <div class="text-xs text-text-secondary-light dark:text-text-secondary-dark mt-1">Words Researched</div>
+          <div class="text-xs text-text-secondary-light dark:text-text-secondary-dark mt-1">Words of Research</div>
         </div>
         <div>
-          <div class="text-3xl font-bold text-accent-light dark:text-accent-dark">7</div>
-          <div class="text-xs text-text-secondary-light dark:text-text-secondary-dark mt-1">Nightly Sessions</div>
+          <div class="text-3xl font-bold text-accent-light dark:text-accent-dark">24/7</div>
+          <div class="text-xs text-text-secondary-light dark:text-text-secondary-dark mt-1">Autonomous Operation</div>
         </div>
         <div>
-          <div class="text-3xl font-bold text-accent-light dark:text-accent-dark">10</div>
-          <div class="text-xs text-text-secondary-light dark:text-text-secondary-dark mt-1">Days to Build</div>
+          <div class="text-3xl font-bold text-accent-light dark:text-accent-dark">∞</div>
+          <div class="text-xs text-text-secondary-light dark:text-text-secondary-dark mt-1">Growth Horizon</div>
         </div>
       </div>
     </div>
