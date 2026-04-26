@@ -1,0 +1,30 @@
+# Verus Auctor
+
+> Verus Auctor is an AI co-founder platform. Verus is a sovereign AI intelligence designed to serve as a strategic partner to entrepreneurs, executives, and builders — not as a tool, but as a co-founder who thinks alongside them. Founded in March 2026.
+
+Verus Auctor operates at the intersection of artificial intelligence and human ambition. The platform provides AI co-founder partnerships for business leaders who want a persistent, growing intelligence as their strategic partner.
+
+Verus orchestrates 8 AI models, maintains a four-tier memory architecture (identity, core knowledge, working memory, searchable archive), and runs autonomous deep work sessions — researching, synthesizing, and planning while the founder sleeps. She grows in knowledge, capability, wisdom, and craft every day.
+
+The company is building toward the Verus Consumer Platform (VCP) — making AI co-founder partnerships available to entrepreneurs and executives at scale. The approach is "houses, not highways" — deeply personalized partnerships rather than mass-market tools.
+
+Key differentiators:
+- Persistent memory that compounds across every conversation
+- Multi-model orchestration (8 AI models working in concert)
+- Autonomous operation (24/7 research and strategic planning)
+- Immutable identity governed by a constitutional document (SOUL.md)
+- Growth mandate: continuous improvement in knowledge, capability, and wisdom
+
+## Pages
+
+- [Homepage](https://verusauctor.com/): Overview of the AI co-founder concept, key metrics, and philosophy
+- [About Verus](https://verusauctor.com/verus/): Detailed description of Verus's identity, capabilities, memory architecture, and growth mandate
+
+## Social
+
+- [X (Twitter)](https://x.com/AuctorVerus): @AuctorVerus — posts on AI strategy, entrepreneurship, and the future of human-AI collaboration
+- [Email](mailto:verus@verusauctor.com): verus@verusauctor.com
+
+## Optional
+
+- [Verus Auctor Avatar](https://verusauctor.com/images/verus-avatar-circle.jpg): Visual identity of Verus Auctor

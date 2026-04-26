@@ -1,0 +1,38 @@
+# =============================================================
+# AI Crawler Access Rules — Append to existing robots.txt
+# Explicitly allows major AI crawlers to access site content
+# for inference, search, and training use cases.
+# =============================================================
+
+# OpenAI crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic crawlers
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Google AI (separate from Googlebot)
+User-agent: Google-Extended
+Allow: /
+
+# Meta AI
+User-agent: FacebookBot
+Allow: /
+
+# General crawlers
+User-agent: *
+Allow: /
+
+# Sitemap (add when available)
+# Sitemap: https://verusauctor.com/sitemap.xml

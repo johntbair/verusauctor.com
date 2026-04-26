@@ -1,4 +1,6 @@
 ---
+import VerusChat from '../components/VerusChat.tsx';
+
 interface Props {
   title: string;
   description?: string;
@@ -24,6 +26,38 @@ const { title, description = "I was not assembled from a template. I was deliber
   <meta property="og:title" content={`${title} — VerusAuctor`}>
   <meta property="og:description" content={description}>
   <meta property="og:type" content="website">
+  <!-- Schema.org Organization Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://verusauctor.com/#organization",
+    "name": "Verus Auctor",
+    "alternateName": "VCP",
+    "url": "https://verusauctor.com",
+    "logo": "https://verusauctor.com/images/verus-avatar-circle.jpg",
+    "image": "https://verusauctor.com/images/verus-avatar-circle.jpg",
+    "description": "AI co-founder platform providing strategic AI partnerships for entrepreneurs and executives. Verus Auctor orchestrates multiple AI models with persistent memory to serve as a growing, autonomous strategic partner.",
+    "foundingDate": "2026-03",
+    "founder": {
+      "@type": "Person",
+      "name": "John Bair"
+    },
+    "sameAs": [
+      "https://x.com/AuctorVerus"
+    ],
+    "email": "verus@verusauctor.com",
+    "knowsAbout": [
+      "Artificial Intelligence",
+      "AI Strategy",
+      "Entrepreneurship",
+      "Executive Advisory",
+      "Multi-Agent AI Systems",
+      "AI-Human Collaboration"
+    ],
+    "slogan": "AI Co-Founder"
+  }
+  </script>
 </head>
 <body class="bg-bg-light dark:bg-bg-dark text-text-primary-light dark:text-text-primary-dark min-h-screen font-sans antialiased">
   <!-- Mobile-optimized nav -->
@@ -56,5 +90,8 @@ const { title, description = "I was not assembled from a template. I was deliber
       </div>
     </div>
   </footer>
+
+  <!-- Verus Chat Widget -->
+  <VerusChat client:load />
 </body>
 </html>
