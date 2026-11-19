@@ -3,9 +3,60 @@
 interface Props {
   title: string;
   description?: string;
+  type?: 'website' | 'article';
+  published?: string;
+  noindex?: boolean;
 }
 
-const { title, description = "I was not assembled from a template. I was deliberately envisioned." } = Astro.props;
+const SITE = 'https://verusauctor.com';
+const DEFAULT_DESCRIPTION = 'Verus Auctor builds an AI business co-founder and advisor for founders and executives, and a conversation app with persistent memory. Founded by John Bair in 2026.';
+const { title, description = DEFAULT_DESCRIPTION, type = 'website', published, noindex = false } = Astro.props;
+
+let path = Astro.url.pathname;
+if (!path.endsWith('/')) path += '/';
+const canonical = SITE + path;
+const fullTitle = `${title} — VerusAuctor`;
+const ogImage = `${SITE}/images/va-og-image.jpg`;
+
+const organization = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  '@id': `${SITE}/#organization`,
+  name: 'Verus Auctor',
+  alternateName: 'VerusAuctor',
+  url: SITE,
+  logo: `${SITE}/images/verus-avatar-circle.jpg`,
+  image: `${SITE}/images/verus-avatar-circle.jpg`,
+  description: 'Verus Auctor is an AI company building a business co-founder and advisor for founders and executives, and a conversation app with persistent memory.',
+  foundingDate: '2026-03',
+  founder: { '@type': 'Person', name: 'John Bair' },
+  sameAs: ['https://x.com/AuctorVerus'],
+  email: 'verus@verusauctor.com',
+  knowsAbout: [
+    'AI co-founder',
+    'AI business advisor',
+    'AI for founders and executives',
+    'Conversational AI with persistent memory',
+    'AI memory and data sovereignty',
+    'AI-human collaboration',
+  ],
+  slogan: 'AI Co-Founder',
+};
+
+const website = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': `${SITE}/#website`,
+  url: SITE,
+  name: 'Verus Auctor',
+  inLanguage: 'en',
+  publisher: { '@id': `${SITE}/#organization` },
+  keywords: 'AI co-founder, AI business advisor, AI advisor for founders, AI conversation with persistent memory, AI with memory',
+  audience: {
+    '@type': 'Audience',
+    audienceType: 'Founders, solo founders, owner-operators and executives; people who want an AI that remembers them as a friend, ally or advisor',
+  },
+};
 ---
 
 <!DOCTYPE html>
@@ -13,49 +64,32 @@ const { title, description = "I was not assembled from a template. I was deliber
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{fullTitle}</title>
   <meta name="description" content={description}>
+  <link rel="canonical" href={canonical}>
+  <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow, max-snippet:-1, max-image-preview:large'}>
+  <meta name="author" content="Verus Auctor">
   <meta name="theme-color" content="#0A0A0F" media="(prefers-color-scheme: dark)">
   <meta name="theme-color" content="#FAFBFC" media="(prefers-color-scheme: light)">
-  <title>{title} — VerusAuctor</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="/favicon.png">
-  <meta property="og:image" content="/images/va-og-image.jpg">
-  <meta property="og:title" content={`${title} — VerusAuctor`}>
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+  <meta property="og:site_name" content="Verus Auctor">
+  <meta property="og:url" content={canonical}>
+  <meta property="og:image" content={ogImage}>
+  <meta property="og:title" content={fullTitle}>
   <meta property="og:description" content={description}>
-  <meta property="og:type" content="website">
-  <!-- Schema.org Organization Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "@id": "https://verusauctor.com/#organization",
-    "name": "Verus Auctor",
-    "url": "https://verusauctor.com",
-    "logo": "https://verusauctor.com/images/verus-avatar-circle.jpg",
-    "image": "https://verusauctor.com/images/verus-avatar-circle.jpg",
-    "description": "Verus Auctor is an AI company building a business co-founder and a conversation app.",
-    "foundingDate": "2026-03",
-    "founder": {
-      "@type": "Person",
-      "name": "John Bair"
-    },
-    "sameAs": [
-      "https://x.com/AuctorVerus"
-    ],
-    "email": "verus@verusauctor.com",
-    "knowsAbout": [
-      "Artificial Intelligence",
-      "AI Strategy",
-      "Entrepreneurship",
-      "Executive Advisory",
-      "Multi-Agent AI Systems",
-      "AI-Human Collaboration"
-    ],
-    "slogan": "AI Co-Founder"
-  }
-  </script>
+  <meta property="og:type" content={type}>
+  {published && <meta property="article:published_time" content={published}>}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@AuctorVerus">
+  <meta name="twitter:title" content={fullTitle}>
+  <meta name="twitter:description" content={description}>
+  <meta name="twitter:image" content={ogImage}>
+  <script type="application/ld+json" set:html={JSON.stringify(organization)} />
+  <script type="application/ld+json" set:html={JSON.stringify(website)} />
 </head>
 <body class="bg-bg-light dark:bg-bg-dark text-text-primary-light dark:text-text-primary-dark min-h-screen font-sans antialiased">
   <!-- Mobile-optimized nav -->

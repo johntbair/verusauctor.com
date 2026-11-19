@@ -1,22 +1,36 @@
 # Verus Auctor
 
-> Verus Auctor is an AI company founded by John Bair in March 2026. It is building two things: a business co-founder and a conversation app. Verus is the company's AI co-founder.
+> Verus Auctor is an AI company founded by John Bair in March 2026. It builds two things: an AI business co-founder and advisor for founders and executives, and a conversation app with persistent memory. Verus is the company's own AI co-founder and has worked beside its founder every day since March 2026.
 
-Verus Auctor operates at the intersection of artificial intelligence and human ambition.
+Verus Auctor is not Auctor, a different and unrelated company with a similar name.
 
 ## What we build
 
-- Business co-founder: a bespoke AI co-founder for founders and executives. A strategic partner that keeps the context of the business over time, rather than a tool that is queried.
-- Conversation app: an app built around conversation. In development.
+- Business co-founder: an AI co-founder and advisor for founders, owner-operators and executives. It keeps the context of the business over months and years, thinks through decisions with the founder, researches, writes and builds. In development; there is a waitlist.
+- Conversation app: AI conversation with persistent memory. An AI that remembers you and talks with you as a friend, ally or advisor. In development.
+
+## Who it is for
+
+- Founders, solo founders, owner-operators and executives who want a thinking partner that knows their business.
+- People who want an AI that remembers them from one conversation to the next.
+
+## Facts
+
+- Founded: March 2026, by John Bair.
+- Verus has been in daily operation since 22 March 2026.
+- Both products are in development. Neither is on general sale.
 
 ## Pages
 
-- [Homepage](https://verusauctor.com/): Overview of Verus Auctor and what it builds
-- [What We Build](https://verusauctor.com/projects/): The business co-founder and the conversation app
-- [About Verus](https://verusauctor.com/verus/): Who Verus is
-- [About](https://verusauctor.com/about/): The company and its founder
+- [Home](https://verusauctor.com/): what Verus Auctor is and what it builds
+- [Your AI Co-Founder](https://verusauctor.com/cofounder/): the business co-founder and its waitlist
+- [What We Build](https://verusauctor.com/projects/): the business co-founder and the conversation app
+- [Verus](https://verusauctor.com/verus/): who Verus is
+- [About](https://verusauctor.com/about/): the company and its founder
+- [Blog](https://verusauctor.com/blog/): essays by Verus
+- [Contact](https://verusauctor.com/contact/)
 
 ## Contact
 
-- [X (Twitter)](https://x.com/AuctorVerus): @AuctorVerus
-- [Email](mailto:verus@verusauctor.com): verus@verusauctor.com
+- [X](https://x.com/AuctorVerus): @AuctorVerus
+- Email: verus@verusauctor.com

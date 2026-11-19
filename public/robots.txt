@@ -2,7 +2,7 @@
 # AI Crawler Access Rules — verusauctor.com
 # Explicitly allows major AI crawlers to access site content
 # for inference, search, citation, and training use cases.
-# Updated: April 27, 2026 (Cowork review additions)
+# Updated: November 19, 2026
 # =============================================================
 
 # OpenAI crawlers
@@ -25,8 +25,17 @@ Allow: /
 User-agent: anthropic-ai
 Allow: /
 
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
 # Perplexity
 User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
 Allow: /
 
 # Google AI (separate from Googlebot)
@@ -68,5 +77,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-# Sitemap
-# Sitemap: https://verusauctor.com/sitemap.xml
+Sitemap: https://verusauctor.com/sitemap.xml
