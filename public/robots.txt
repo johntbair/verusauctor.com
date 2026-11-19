@@ -73,6 +73,35 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
+# Meta AI live fetcher
+User-agent: meta-externalfetcher
+Allow: /
+
+# xAI / Grok. xAI publishes no crawler names; these are the names
+# reported by third-party bot registries (unconfirmed, 2026-11-19).
+User-agent: GrokBot
+Allow: /
+
+User-agent: xAI-SearchBot
+Allow: /
+
+User-agent: xAI-Bot
+Allow: /
+
+# Mistral
+User-agent: MistralAI-Training
+Allow: /
+
+# Search indexes that feed AI answers (Google AI Overviews and Gemini, Copilot, Siri)
+User-agent: Googlebot
+Allow: /
+
+User-agent: bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
 # General crawlers
 # Content signals: search, AI answers and AI training are all permitted (John Bair, 2026-11-19).
 User-agent: *
