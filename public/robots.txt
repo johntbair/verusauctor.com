@@ -74,7 +74,9 @@ User-agent: CCBot
 Allow: /
 
 # General crawlers
+# Content signals: search, AI answers and AI training are all permitted (John Bair, 2026-11-19).
 User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
 
 Sitemap: https://verusauctor.com/sitemap.xml
